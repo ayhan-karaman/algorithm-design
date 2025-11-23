@@ -66,7 +66,7 @@ export default function Home() {
   return (
     <>
       <div className="p-4 flex justify-center mx-auto max-w-(--breakpoint-2xl) md:p-6">
-        <ComponentCard className="w-7xl" title="Siteme hoş geldiniz!">
+        <ComponentCard className="w-6xl" title="Siteme hoş geldiniz!">
           <p className="text-sm font-medium text-gray-800 dark:text-white/90">
             Algoritmaları öğrenmek, doğru yaklaşımı bildiğinizde oldukça keyifli olabilir.
             BTK Akademi’deki Zafer Cömert algoritma eğitiminden ilham alarak hazırladığım bu React projesinde,
