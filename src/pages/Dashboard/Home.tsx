@@ -1,39 +1,37 @@
+import { Link } from "react-router";
 import ComponentCard from "../../components/common/ComponentCard";
 
-
-const navItems = [
+type NavItem = {
+  name: string;
+  path: string;
+};
+const navItems:NavItem[] = [
   {
-    /*icon: <BsSortNumericDown />,*/
+    
     name: "Tek mi?",
     path: "/isoddnumber",
   },
   {
-    /*icon: <BsSortNumericDown />,*/
     name: "Çift mi?",
     path: "/isevennumber",
   },
   {
-    /*icon: <BsSortNumericDown />,*/
     name: "Mutlak Değer",
     path: "/absolute-value",
   },
   {
-    /*icon: <BsSortNumericDown />,*/
     name: "Asal Sayı mı?",
     path: "/is-prime-number",
   },
   {
-    /*icon: <BsSortNumericDown />,*/
     name: "Rakamların Toplamı",
     path: "/sum-of-numbers",
   },
   {
-    /*icon: <BsSortNumericDown />,*/
     name: "Tek Sayı Toplamı(N)",
     path: "/sum-of-odd-number",
   },
   {
-    /*icon: <BsSortNumericDown />,*/
     name: "Çift Sayı Toplamı(N)",
     path: "/sum-of-even-number",
   },
@@ -79,9 +77,9 @@ export default function Home() {
           navItems.map((e, i) => {
             const randomBg = getRandomColor();
             return (
-              <a key={i} href={e.path} className={`${randomBg} hover:opacity-80 text-white font-bold py-2 mx-2 my-2 px-4 rounded-full`}>
+              <Link key={i} to={e.path} className={`${randomBg} hover:opacity-80 text-white font-bold py-2 mx-2 my-2 px-4 rounded-full`}>
                 {e.name}
-              </a>
+              </Link>
             )
           })
         }
