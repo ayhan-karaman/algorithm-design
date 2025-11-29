@@ -49,20 +49,20 @@ export default function IsOddNumber() {
                 <ComponentCard className="w-150" title="Tek Mi?">
                     <p className="text-sm font-medium text-gray-800 mb-2 dark:text-white/90">
                         <h5>📌 Algoritmanın Açıklaması</h5>
-                        <p className="text-sm font-medium text-gray-800 mb-2 dark:text-white/90">
+                        <p className="text-sm font-medium">
                             Bu algoritma, kullanıcı tarafından girilen bir sayının tek olup olmadığını kontrol eder.
                         </p>
 
-                        <ol className="list-decimal ml-6 space-y-2 marker:text-white my-2 marker:bg-blue-600 marker:px-2 marker:rounded-full marker:mx-2 marker:align-middle">
+                        <ol className="list-decimal ml-6 space-y-2">
                             <li className="pl-1">
                                 Number(value)
-                                <p className="text-sm font-medium text-gray-800 mb-2 dark:text-white/90" > Girilen değer önce sayıya dönüştürülür. Örneğin "7" → 7. </p>
+                                <p className="text-sm font-medium" > Girilen değer önce sayıya dönüştürülür. Örneğin "7" → 7. </p>
                             </li>
                             <li className="pl-1 mt-5">
                                 Sayıyı 2’ye bölme (mod alma)
-                                <p className="text-sm font-medium text-gray-800 mb-2 dark:text-white/90" >
+                                <p className="text-sm font-medium" >
                                     Number(value) % 2 işlemi sayının 2 ile bölümünden kalan değeri hesaplar.
-                                    <ul className="list-disc ml-5 text-gray-800 mb-2 dark:text-white/90">
+                                    <ul className="list-disc ml-5">
                                         <li>Eğer kalan 1 ise → sayı tektir.</li>
                                         <li>Eğer kalan 0 ise → sayı çifttir (veya tek değildir).</li>
                                     </ul>
@@ -70,7 +70,7 @@ export default function IsOddNumber() {
                             </li>
                             <li className="pl-1 mt-5">
                                 Kod Örneği
-                                <p className="text-sm font-medium text-gray-800 mb-2 dark:text-white/90" >
+                                <p className="text-sm font-medium" >
                                     <CopyCodeBlock
                                         language="javascript"
                                         code={code}
@@ -79,7 +79,7 @@ export default function IsOddNumber() {
                             </li>
                             <li className="pl-1 mt-5">
                                 Test 
-                                <p className="text-sm font-medium text-gray-800 mb-2 dark:text-white/90" >
+                                <p className="text-sm font-medium" >
                                     <Form onSubmit={handleSubmit} className="space-y-4" >
                                         <div className="space-y-6">
                                             <div>
